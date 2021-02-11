@@ -47,7 +47,8 @@ Gem::Specification.new do |s|
     "vendor/migration_helpers/MIT-LICENSE",
     "vendor/migration_helpers/README.markdown",
     "vendor/migration_helpers/init.rb",
-    "vendor/migration_helpers/lib/migration_helper.rb"
+    "vendor/migration_helpers/lib/migration_helper.rb",
+    "wsgr-standalone_migrations.gemspec"
   ]
   s.homepage = "http://github.com/thuss/standalone-migrations".freeze
   s.licenses = ["MIT".freeze]
@@ -60,12 +61,12 @@ Gem::Specification.new do |s|
 
   if s.respond_to? :add_runtime_dependency then
     s.add_runtime_dependency(%q<rake>.freeze, [">= 10.0"])
-    s.add_runtime_dependency(%q<activerecord>.freeze, [">= 4.2.7", "< 6.1.0", "!= 5.2.3", "!= 5.2.3.rc1"])
-    s.add_runtime_dependency(%q<railties>.freeze, [">= 4.2.7", "< 6.1.0", "!= 5.2.3", "!= 5.2.3.rc1"])
+    s.add_runtime_dependency(%q<activerecord>.freeze, [">= 4.2.7", "< 7.0.0", "!= 5.2.3", "!= 5.2.3.rc1"])
+    s.add_runtime_dependency(%q<railties>.freeze, [">= 4.2.7", "< 7.0.0", "!= 5.2.3", "!= 5.2.3.rc1"])
   else
     s.add_dependency(%q<rake>.freeze, [">= 10.0"])
-    s.add_dependency(%q<activerecord>.freeze, [">= 4.2.7", "< 6.1.0", "!= 5.2.3", "!= 5.2.3.rc1"])
-    s.add_dependency(%q<railties>.freeze, [">= 4.2.7", "< 6.1.0", "!= 5.2.3", "!= 5.2.3.rc1"])
+    s.add_dependency(%q<activerecord>.freeze, [">= 4.2.7", "< 7.0.0", "!= 5.2.3", "!= 5.2.3.rc1"])
+    s.add_dependency(%q<railties>.freeze, [">= 4.2.7", "< 7.0.0", "!= 5.2.3", "!= 5.2.3.rc1"])
   end
 end
 
